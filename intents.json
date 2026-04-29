@@ -1,0 +1,114 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good afternoon",
+        "Is anyone there?",
+        "Hi there"
+      ],
+      "responses": [
+        "Hello! Welcome to SmartBank. How can I help you today?",
+        "Hi there! How can I assist you with your banking needs?",
+        "Greetings! What can I do for you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Thanks, bye",
+        "Have a good day"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "Thank you for using SmartBank. See you later!",
+        "Bye! Let me know if you need anything else."
+      ]
+    },
+    {
+      "tag": "balance",
+      "patterns": [
+        "What is my balance?",
+        "Check my account balance",
+        "How much money do I have?",
+        "Show my balance",
+        "Account balance"
+      ],
+      "responses": [
+        "Fetching your account balance..."
+      ]
+    },
+    {
+      "tag": "transactions",
+      "patterns": [
+        "Show my recent transactions",
+        "What are my last transactions?",
+        "Transaction history",
+        "Recent activity",
+        "Show me my statement"
+      ],
+      "responses": [
+        "Retrieving your recent transactions..."
+      ]
+    },
+    {
+      "tag": "loan",
+      "patterns": [
+        "I need a loan",
+        "How do I apply for a loan?",
+        "Loan information",
+        "What are the loan interest rates?",
+        "Personal loan details"
+      ],
+      "responses": [
+        "We offer personal, home, and auto loans. The current interest rate for personal loans starts at 10.5% p.a. Would you like a link to apply?",
+        "You can apply for a loan online through our portal. Our interest rates start from 10.5%. Need more details?"
+      ]
+    },
+    {
+      "tag": "credit_card",
+      "patterns": [
+        "I want to apply for a credit card",
+        "Credit card application",
+        "What credit cards do you offer?",
+        "Lost my credit card",
+        "Block credit card"
+      ],
+      "responses": [
+        "We offer a variety of credit cards with great rewards. If you lost your card, please call our emergency hotline immediately at 1-800-BLOCK-CARD.",
+        "You can apply for a new credit card online. If you need to report a lost card, type 'block my card' or call customer care."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks a lot",
+        "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm sorry, I didn't quite understand that. Could you rephrase?",
+        "I am still learning. Can you please be more specific?",
+        "I'm not sure how to help with that. Try asking about your balance, transactions, loans, or credit cards."
+      ]
+    }
+  ]
+}
