@@ -1,10 +1,10 @@
-document.getElementById("send-btn").onclick = function() {
+document.getElementById("send-btn").onclick = function () {
     let input = document.getElementById("user-input").value;
 
-    fetch("/get", {
+    fetch("/chat", {   // ✅ FIXED HERE
         method: "POST",
-        body: JSON.stringify({message: input}),
-        headers: {"Content-Type": "application/json"}
+        body: JSON.stringify({ message: input }),
+        headers: { "Content-Type": "application/json" }
     })
     .then(res => res.json())
     .then(data => {
